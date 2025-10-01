@@ -1,17 +1,19 @@
 <template>
     <div id="background">
-        <section id="discover" >
+        <section id="discover">
             <div id="presentation">
                 <h1>Clément AVESQUE</h1>
                 <div>
                     <h3>dev web</h3>
                 </div>
-
             </div>
         </section>
         <img src="../assets/separationNight1.svg" alt="" id="separation" v-if="theme === false" />
         <img src="../assets/separationLight1.svg" alt="" id="separation" v-else />
-
+        <section id="me">
+            <pdp :mode="theme"/>
+            <p>Je m'appelle Clément AVESQUE, j'ai 19 ans et je suis dans la formation développement web du DN MADE à la CCI d'Annecy qui est en partenariat avec les Gobelins. Je souhaiterais pouvoir évoluer dans mon cursus jusqu'en master pour pouvoir avoir l'expérience et le savoir nécessaire pour répondre à un maximum de besoins.</p>
+        </section>
     </div>
 </template>
 <style scoped>
@@ -20,6 +22,23 @@
     --yellow: #FFCD03;
     --black: #6666663d;
     --white: #FFFFFF;
+}
+
+#me p{
+    width: 50%;
+    color: var(--black);
+    font-size: 32px;
+
+}
+
+#me{
+    width: 80%;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 #background {
@@ -33,23 +52,23 @@
 #separation {
     width: 100%;
     margin-top: -4%;
-    margin-bottom: 50%;
+    flex-direction: column;
 
+    justify-content: center;
 }
 
 section {
-    width: 100%;
-    height: 110vh;
+
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 #discover {
     background-image: url('../assets/background_presentation.svg');
+    width: 100%;
+    height: 110vh;
 }
 
 #presentation {
@@ -66,6 +85,7 @@ h1 {
 }
 </style>
 <script setup>
+import pdp  from "../components/image.vue"
 import { watch, computed, onMounted } from 'vue';
 import { useMainStore } from '../store/index.js';
 const Store = useMainStore();
