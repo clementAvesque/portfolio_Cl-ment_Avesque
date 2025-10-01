@@ -1,5 +1,5 @@
 <template>
-    <button>
+    <button :class="[use ,size]">
         {{ text }}
     </button>
 </template>
@@ -11,9 +11,22 @@
     --buttonwhite: #FFFFFF;
 }
 
+.actif {
+    background-color: #4D56FF;
+    color: white;
+    min-width: 133px;
+    min-height: 51px;
+}
+
+.passif {
+    width: 25%;
+    background: transparent;
+    color: var(--buttonblack);
+    border: solid 2px var(--buttonyellow);
+}
+
 button {
-    width: 133px;
-    height: 51px;
+    padding: 5%;
     color: var(--buttonwhite);
     border: none;
     cursor: pointer;
@@ -22,23 +35,39 @@ button {
     font-weight: 700;
     background: var(--buttonblue);
     transition: 0.3s ease;
-    clip-path: polygon(4px 5px,
-            8px 0px,
-            133px 0px,
-            133px 42px,
-            129px 46px,
-            125px 50px,
-            0px 50px,
-            0px 9px,
-            4px 5px);
+    clip-path: polygon(3% 10%,
+            6% 0%,
+            100% 0%,
+            100% 82%,
+            97% 90%,
+            94% 100%,
+            0% 100%,
+            0% 18%,
+            3% 10%);
 }
 
-button:hover {
-    color: var(--buttonblue);
+.grand{
+    font-size: 32px;
+    padding: 3% 5%;
+}
+
+.actif:hover {
+    color: #4D56FF;
     ;
-    background: var(--buttonwhite);
+    background: white;
     text-align: center;
-    text-shadow: 0 0 20px var(--buttonblue);
+    text-shadow: 0 0 20px #4D56FF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.passif:hover {
+    color: var(--buttonblack);
+    ;
+    background: var(--buttonyellow);
+    text-align: center;
+    text-shadow: 0 0 20px var(--buttonyellow);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -68,43 +97,10 @@ export default {
             validator: (value) => ['petit', 'moyen', 'grand'].includes(value)
         }
     },
-    setup(props) {
-        const buttonStyles = {
-            petit: {
-                padding: '5px 10px',
-                fontSize: '12px'
-            },
-            moyen: {
-                padding: '10px 20px',
-                fontSize: '16px'
-            },
-            grand: {
-                padding: '15px 30px',
-                fontSize: '20px'
-            }
-        };
-
-        const useStyles = {
-            passif: {
-                backgroundColor: 'blue',
-                color: 'white'
-            },
-            actif: {
-                backgroundColor: 'green',
-                color: 'white'
-            }
-        };
-
-        return {
-            buttonStyle: {
-                ...buttonStyles[props.size],
-                ...useStyles[props.use]
-            }
-        };
-
-    },
     setup() {
         const store = useMainStore();
+
+
         const changeHoverColor = () => {
             document.documentElement.style.setProperty('--buttonblue', store.color.blue);
             document.documentElement.style.setProperty('--buttonyellow', store.color.yellow);

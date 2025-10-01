@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer >
         <div id="navigation">
             <ul>
                 <li v-for="(item, index) in items" :key="index" @click="moveSelector($event)">
