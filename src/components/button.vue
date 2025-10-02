@@ -29,6 +29,7 @@ button {
     padding: 5%;
     color: var(--buttonwhite);
     border: none;
+    font-family: "Geist", sans-serif;
     cursor: pointer;
     font-size: 20px;
     font-style: normal;

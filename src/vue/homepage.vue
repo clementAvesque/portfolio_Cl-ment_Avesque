@@ -95,6 +95,7 @@ h2 {
     width: 50%;
     color: var(--black);
     font-size: 32px;
+    font-family: 'Geist', sans-serif;
 
 }
 
@@ -142,16 +143,23 @@ section {
 }
 
 #presentation {
-    margin-top: 40px;
     width: 60%;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 124px;
     font-weight: 700;
-    color: white;
-    text-shadow: 0 0 20px #000000;
-    margin-bottom: 20px;
+    color:  #FFCD03;
+    text-shadow: 0 0 10px #FFCD03;
+    font-family: 'Staatliches', sans-serif;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--blue);
+    font-family: 'Geist', sans-serif;
 }
 </style>
 <script setup>

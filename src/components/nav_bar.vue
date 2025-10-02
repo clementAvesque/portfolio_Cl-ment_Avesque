@@ -1,5 +1,5 @@
 <template>
-    <footer >
+    <nav >
         <div id="navigation">
             <ul>
                 <li v-for="(item, index) in items" :key="index" @click="moveSelector($event)">
@@ -18,7 +18,7 @@
             <img src="../assets/light_them.svg" alt="" id="light_mod" @click="Store.toggleTheme()" v-if="Store.theme === true" />
             <img src="../assets/dark_them.svg" alt="" id="dark_mod" @click="Store.toggleTheme()" v-else />
         </div>
-    </footer>
+    </nav>
 </template>
 
 <script setup>
@@ -60,6 +60,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 :root {
     --footerblue: #4d56ff;
     --footeryellow: #ffcd03;
@@ -77,11 +78,13 @@ onMounted(() => {
 }
 
 
-footer {
+nav {
+    z-index: 100;
     padding-left: 10%;
     height: 100px;
     width: 100%;
     background-color: var(--footerwhite);
+    font-family: 'Geist', sans-serif;
     clip-path: polygon(3% 69%,
             0% 34%,
             0% 100%,

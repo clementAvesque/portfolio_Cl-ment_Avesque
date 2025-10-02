@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+    font-family: "staatliches";
+    src: url("/font/Staatliches-Regular.ttf") format("truetype");
+}

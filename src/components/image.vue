@@ -1,6 +1,6 @@
 <template>
 
-    <img src="../assets/pdp.jpg" alt="" :style="{ '--primary': mode ? '#4D56FF' : '#FFCD03' }">
+    <img src="../assets/pdp.jpg" alt="" :style="{ '--primary': mode ? '#4D56FF' : '#FFCD03' }" >
 
 </template>
 

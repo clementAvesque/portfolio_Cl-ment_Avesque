@@ -6,7 +6,7 @@ export const useMainStore = defineStore('main', {
         project: [
             {
                 name: 'Genesii',
-                link: "../../public/assets/background_project/genesii.svg",
+                link: "/background_project/genesii.svg",
                 stack: ['vue', 'css', 'html', 'js'],
                 description: "Lors de ma recherche d’alternance, j’ai été dans les finalistes d’une entreprise où j’ai dû réaliser une collecte d’information différente de ce qu’on connait... ",
                 liens_du_produit: "https://prise-d-information-genesii.vercel.app/",
@@ -17,7 +17,7 @@ export const useMainStore = defineStore('main', {
             },
             {
                 name: 'FOUND THE MOUSE',
-                link: "../../public/assets/background_project/found_the_rat.svg",
+                link: "/background_project/found_the_rat.svg",
                 stack: ['css', 'html', 'js'],
                 description: "Dans ce jeu, vous incarnez un assistant d’un chef et une souris s’est  infiltrée dans sa cuisine ! Attrapez la souris avant qu’elle ne  s’enfuie! ",
                 liens_du_produit: "https://prise-d-information-genesii.vercel.app/",
@@ -29,7 +29,7 @@ export const useMainStore = defineStore('main', {
 
         ],
         color: { blue: '#4D56FF', yellow: '#FFCD03', white: "#FFFFFF", black: "#000000" },
-        Font: { title: "geist", text: "staatliches" },
+        Font: [ {route: "/font/Aeconic.otf", title: "aeconic"}, {route: "/font/Staatliches-Regular.ttf", title: "staatliches"} ],
         stacks: ["Vue.js", "Javascript", "Node.js/express", "PostgreSQL", "discord.js", "HTML", "CSS", "python", "PHP"],
         theme: true,
     }),
