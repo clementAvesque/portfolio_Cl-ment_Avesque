@@ -15,7 +15,7 @@
 
 h2 {
   color: var(--titleyellow);
-  font-size: 60px;
+  font-size: 124px;
   margin-bottom: 50px;
   font-family: var(--nameFont);
 }
@@ -30,6 +30,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url("/background_project/Qltur_g.svg");
 }
 </style>
 
