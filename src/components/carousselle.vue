@@ -23,6 +23,7 @@ h2 {
 .project-banner {
   width: 100%;
   height: 125vh;
+  background-image: url("../assets/Qltur_G.svg");
   background-size: cover;
   background-position: center;
   transition: all 1s ease-in-out;
@@ -30,7 +31,6 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("/background_project/Qltur_g.svg");
 }
 </style>
 

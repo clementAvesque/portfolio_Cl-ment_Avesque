@@ -1,5 +1,5 @@
 <template>
-    <button :class="[use ,size]">
+    <button :class="[use ,size]" :type="type">
         {{ text }}
     </button>
 </template>
@@ -21,7 +21,7 @@
 .passif {
     width: 25%;
     background: transparent;
-    color: var(--buttonblack);
+    color: var(--black);
     border: solid 2px var(--buttonyellow);
 }
 
@@ -83,6 +83,11 @@ export default {
     name: 'CustomButton',
 
     props: {
+        type: {
+            type: String,
+            default: 'button',
+            validator: (value) => ['button', 'submit', 'reset'].includes(value)
+        },
         text: {
             type: String,
             default: 'bouton de fou'

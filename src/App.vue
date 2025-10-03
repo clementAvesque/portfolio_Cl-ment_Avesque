@@ -13,6 +13,7 @@ import  Footer  from './components/footer.vue';
 
 <style scoped>
 
+
 .geist {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;

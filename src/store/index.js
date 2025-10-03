@@ -31,7 +31,7 @@ export const useMainStore = defineStore('main', {
         color: { blue: '#4D56FF', yellow: '#FFCD03', white: "#FFFFFF", black: "#000000" },
         Font: [ {route: "/font/Aeconic.otf", title: "aeconic"}, {route: "/font/Staatliches-Regular.ttf", title: "staatliches"} ],
         stacks: ["Vue.js", "Javascript", "Node.js/express", "PostgreSQL", "discord.js", "HTML", "CSS", "python", "PHP"],
-        theme: true,
+        theme: window.matchMedia('(prefers-color-scheme: dark)').matches ? false : true,
     }),
     actions: {
         toggleTheme() {

@@ -5,7 +5,7 @@
             <div id="content">
                 <section id="list">
                     <div id="brand">
-                        <img src="../assets/logo-clement.svg" alt="" id="logo">
+                        <img src="../assets/logo-clement_white.svg" alt="" id="logo">
                         <div id="footer_me">
                             <h3>Clément AVESQUE</h3>
                             <p>Développeur</p>
@@ -32,13 +32,20 @@
                         </a>
                     </div>
                 </section>
-                <section id="other"></section>
+                <section id="other">
+                    <p>Design par Danielle Levinzon | Codé par Clément Avesque</p>
+                </section>
             </div>
             <img src="../assets/star_footer.svg" alt="">
         </div>
     </footer>
 </template>
 <style scoped>
+
+#other{
+    margin-top: 5%;
+    font-size: 16px;
+}
 
 #lien{
     height: 3vh !important;
@@ -127,10 +134,12 @@ h3 {
 footer {
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    padding: 0 10%;
+    padding-top: 8%;
     background-repeat: no-repeat;
     background-size: 50% 80%;
     margin-top: -16vh;
+    margin-bottom: 5vh;
     width: 100%;
     min-height: 80vh;
     background-color: #4D56FF;

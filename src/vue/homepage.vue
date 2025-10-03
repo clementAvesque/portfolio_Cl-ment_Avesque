@@ -171,6 +171,7 @@ import { useMainStore } from '../store/index.js';
 import { RouterLink } from "vue-router";
 const Store = useMainStore();
 let theme = computed(() => Store.theme);
+changeTheme(theme.value);
 const stacks = computed(() => Store.stacks)
 function changeTheme(bool) {
     if (bool === true) {
@@ -194,14 +195,6 @@ function changeTheme(bool) {
 
     }
 }
-
-onMounted(() => {
-
-    document.documentElement.style.setProperty('--blue', Store.color.blue),
-        document.documentElement.style.setProperty('--yellow', Store.color.yellow)
-    document.documentElement.style.setProperty('--black', Store.color.black),
-        document.documentElement.style.setProperty('--white', Store.color.white)
-})
 
 watch(theme, (newVal) => {
     changeTheme(newVal);

@@ -1,11 +1,16 @@
 <template>
-    <nav >
+    <nav>
         <div id="navigation">
             <ul>
                 <li v-for="(item, index) in items" :key="index" @click="moveSelector($event)">
-                    <RouterLink v-if="item.to" :to="item.to">
+                    <RouterLink v-if="item.to && !item.style" :to="item.to">
                         <CustomButton :text="item.text" use="actif" />
                     </RouterLink>
+
+                    <RouterLink v-else-if="item.to && item.style" :to="item.to">
+                        <span>{{ item.text }}</span>
+                    </RouterLink>
+
                     <span v-else>{{ item.text }}</span>
                 </li>
             </ul>
@@ -15,7 +20,8 @@
             </div>
         </div>
         <div id="mode">
-            <img src="../assets/light_them.svg" alt="" id="light_mod" @click="Store.toggleTheme()" v-if="Store.theme === true" />
+            <img src="../assets/light_them.svg" alt="" id="light_mod" @click="Store.toggleTheme()"
+                v-if="Store.theme === true" />
             <img src="../assets/dark_them.svg" alt="" id="dark_mod" @click="Store.toggleTheme()" v-else />
         </div>
     </nav>
@@ -29,9 +35,9 @@ import { useMainStore } from '../store/index.js'
 
 // données
 const items = [
-    { text: 'acceuil' },
-    { text: 'réalisations' },
-    { text: 'Contact', to: '/contact' }
+    { text: 'acceuil', to: '/', style: true },
+    { text: 'réalisations', style: true, to: '/draft' },
+    { text: 'Contact', to: '/contact', style: false }
 ]
 
 const selectorX = ref(0)
@@ -60,7 +66,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 :root {
     --footerblue: #4d56ff;
     --footeryellow: #ffcd03;
@@ -68,7 +73,7 @@ onMounted(() => {
     --footerblack: #000000;
 }
 
-#mode{
+#mode {
     height: 80%;
     width: 10%;
     display: flex;
@@ -77,6 +82,9 @@ onMounted(() => {
 
 }
 
+a{
+    text-decoration: none;
+}
 
 nav {
     z-index: 100;
