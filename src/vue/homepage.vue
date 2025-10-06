@@ -25,7 +25,7 @@
         </section>
         <img src="../assets/separationNight3.svg" alt="" class="separation" id="last" v-if="theme === false">
         <img src="../assets/separationLight3.svg" alt="" class="separation" id="last" v-else>
-        <RouterLink to="/projet">
+        <RouterLink to="/draft">
             <carousselle/>
         </RouterLink>
     </div>
@@ -172,7 +172,7 @@ import { RouterLink } from "vue-router";
 const Store = useMainStore();
 let theme = computed(() => Store.theme);
 changeTheme(theme.value);
-const stacks = computed(() => Store.stacks)
+const stacks = Store.stacks
 function changeTheme(bool) {
     if (bool === true) {
         document.documentElement.style.setProperty('--white', Store.color.white)

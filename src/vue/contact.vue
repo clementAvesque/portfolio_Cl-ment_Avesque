@@ -22,7 +22,7 @@
     </section>
 
 </template>
-<script>
+<script >
 import Button from '../components/button.vue';
 import { computed, watch, reactive } from 'vue';
 import { useMainStore } from '../store/index.js';
@@ -99,7 +99,7 @@ export default {
 }
 
 </script>
-<style>
+<style setup>
 :root {
     --blue: #4D56FF;
     --yellow: #FFCD03;
