@@ -62,7 +62,7 @@ export default {
     // Charger les images
     projects.forEach(element => {
       const img = new Image()
-      img.src = element.link
+      img.src = element.link_carrousel
       all_img.push(img)
     })
 

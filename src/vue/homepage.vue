@@ -11,7 +11,7 @@
         <img src="../assets/separationNight1.svg" alt="" class="separation" v-if="theme === false" />
         <img src="../assets/separationLight1.svg" alt="" class="separation" v-else />
         <section id="me">
-            <pdp :mode="theme" />
+            <pdp :mode="theme" :src="pdpImg" style="width: 30%;"/>
             <p>Je m'appelle Clément AVESQUE, j'ai 19 ans et je suis dans la formation développement web du DN MADE à la
                 CCI d'Annecy qui est en partenariat avec les Gobelins. Je souhaiterais pouvoir évoluer dans mon cursus
                 jusqu'en master pour pouvoir avoir l'expérience et le savoir nécessaire pour répondre à un maximum de
@@ -163,6 +163,7 @@ h3 {
 }
 </style>
 <script setup>
+import pdpImg from '../assets/pdp.jpg';
 import carousselle from "../components/carousselle.vue";
 import Button from "../components/button.vue";
 import pdp from "../components/image.vue"

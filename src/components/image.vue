@@ -1,12 +1,11 @@
 <template>
 
-    <img src="../assets/pdp.jpg" alt="" :style="{ '--primary': mode ? '#4D56FF' : '#FFCD03' }" >
+    <img :src="src" alt="" :style="{ '--primary': mode ? '#4D56FF' : '#FFCD03' }">
 
 </template>
 
 <style scoped>
 img {
-    width: 30%;
     padding: 10px;
     object-fit: cover;
     border: solid 2px;
@@ -19,8 +18,7 @@ img {
             80% 100%,
             0% 110%,
             0% 90%,
-            0% 20%
-        );
+            0% 20%);
 }
 </style>
 
@@ -32,7 +30,8 @@ export default {
         mode: {
             type: Boolean,
             default: true
-        }
+        },
+        src: { type: String, required: true }
     },
     setup(props) {
         const useMode = {

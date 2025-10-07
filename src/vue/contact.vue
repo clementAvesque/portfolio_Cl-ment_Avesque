@@ -99,7 +99,7 @@ export default {
 }
 
 </script>
-<style setup>
+<style scoped>
 :root {
     --blue: #4D56FF;
     --yellow: #FFCD03;
