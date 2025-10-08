@@ -42,6 +42,8 @@
 </template>
 <style scoped>
 
+
+
 #other{
     margin-top: 5%;
     font-size: 16px;

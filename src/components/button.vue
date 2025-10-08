@@ -74,6 +74,10 @@ button {
     font-weight: 700;
     line-height: normal;
 }
+
+.petit{
+    padding: 2vh!important;
+}
 </style>
 
 <script>
