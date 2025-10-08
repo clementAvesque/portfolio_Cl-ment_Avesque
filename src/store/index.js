@@ -7,7 +7,7 @@ export const useMainStore = defineStore('main', {
             {
                 id: "001",
                 name: 'Genesii',
-                link: "/project/genesii/pres.png",
+                link: "/project/pres/genesii.png",
                 link_carrousel: "/background_project/genesii.svg",
                 stack: ['vue', 'css', 'html', 'js'],
                 description: "Lors de ma recherche d’alternance, j’ai été dans les finalistes d’une entreprise où j’ai dû réaliser une collecte d’information différente de ce qu’on connait... ",

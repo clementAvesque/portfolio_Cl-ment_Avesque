@@ -7,6 +7,15 @@
                 <p>{{ project.id }}</p>
                 <h1>{{ project.name }}</h1>
                 <img :src="project.link" alt="">
+                <div id="stacks">
+                    <div v-for="stack in project.stack">
+                        <Custombutton size="petit" :text="stack" style="width: 100%;" />
+                    </div>
+                    <a :href="project.liens_du_produit" target="_blank">
+                        <Custombutton text="testez le!" use="actif" />
+                    </a>
+                    
+                </div>
             </div>
             <div id="desc">
                 <h3>description</h3>
@@ -23,6 +32,13 @@
     </div>
 </template>
 <style scoped>
+#stacks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin-top: 5%;
+}
 
 #more {
     height: 50vh;
@@ -108,9 +124,13 @@ import { useMainStore } from '../store';
 import { computed, watch, onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 import side_project from '../components/side_project.vue';
+import Custombutton from '../components/button.vue'
 
 export default {
-    components: { side_project },
+    components: {
+        side_project,
+        Custombutton
+    },
     setup() {
         const route = useRoute()
 

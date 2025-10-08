@@ -34,6 +34,7 @@
                 </section>
                 <section id="other">
                     <p>Design par Danielle Levinzon | Codé par Clément Avesque</p>
+                    <img src="" alt="">
                 </section>
             </div>
             <img src="../assets/star_footer.svg" alt="">
