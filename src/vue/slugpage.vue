@@ -1,7 +1,7 @@
 <template v-if="project">
     <div id="background">
-        <img src="../assets/top_slug_light.svg" alt="" id="top" v-if="theme">
-        <img src="../assets/top_slug_night.svg" alt="" id="top" v-else>
+        <img src="../assets/top_slug_light.svg" alt="" id="decor" v-if="theme">
+        <img src="../assets/top_slug_night.svg" alt="" id="decor" v-else>
         <div id="content">
             <div id="pres">
                 <p>{{ project.id }}</p>
@@ -11,7 +11,7 @@
                     <div v-for="stack in project.stack">
                         <Custombutton size="petit" :text="stack" style="width: 100%;" />
                     </div>
-                    <a :href="project.liens_du_produit" target="_blank">
+                    <a v-if="project.liens_du_produit" :href="project.liens_du_produit" target="_blank">
                         <Custombutton text="testez le!" use="actif" />
                     </a>
                     
@@ -113,7 +113,7 @@ h3 {
     background-size: 150px 150px;
 }
 
-#top {
+#decor {
     width: 100%;
     margin: 0;
 }

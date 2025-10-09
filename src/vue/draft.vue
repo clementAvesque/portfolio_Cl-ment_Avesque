@@ -33,6 +33,7 @@ export default {
     },
     setup() {
         let slideselected = ref(0)
+        let position = ref(0)
         let store = useMainStore()
         let theme = computed(()=>store.theme)
         let projects = store.project
@@ -40,18 +41,26 @@ export default {
         console.log(project.value)
         const more = () => {
             slideselected.value++
-            if (slideselected.value > projects.length - 1) {
+            position.value++
+            if(position.value>2){
+                position.value = 0
+            }
+            if (slideselected.value > projects.length-1) {
                 slideselected.value = 0
             }
             project = projects[slideselected.value]
         }
 
         const less = () => {
-
-            if (slideselected.value <= 0) {
-                slideselected.value = 3
-            }
             slideselected.value--
+            position.value--
+            if (slideselected.value < 0) {
+                slideselected.value = projects.length - 1
+            }
+            if(position.value < 0){
+                position.value = 2
+            }
+            
             project = projects[slideselected.value]
         }
 
@@ -59,7 +68,7 @@ export default {
             let identity = document.getElementById("identity")
             let image = document.getElementById("image")
             let desc = document.getElementById("desc")
-            switch (slideselected.value) {
+            switch (position.value) {
                 case 0:
                     identity.style.marginLeft = "50px"
                     image.style.marginLeft = "50%"

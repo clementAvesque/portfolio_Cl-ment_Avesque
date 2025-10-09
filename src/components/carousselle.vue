@@ -6,8 +6,8 @@
 </template>
 
 <style>
-:root{
-  --titleyellow:yellow;
+:root {
+  --titleyellow: yellow;
   --nameFont: 'Staatliches';
 }
 
@@ -61,9 +61,13 @@ export default {
 
     // Charger les images
     projects.forEach(element => {
+      if (element.link_carrousel) {
+        
       const img = new Image()
-      img.src = element.link_carrousel
+        img.src = element.link_carrousel
+        
       all_img.push(img)
+      }
     })
 
     // Lancer le carrousel au montage

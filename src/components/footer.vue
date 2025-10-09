@@ -15,7 +15,7 @@
                         <h3>NAVIGATION</h3>
                         <ul>
                             <li>
-                                <RouterLink to="/">Acceuil</RouterLink>
+                                <RouterLink to="/">Accueil</RouterLink>
                             </li>
                             <li>
                                 <RouterLink to="/draft"> Réalisation</RouterLink>
@@ -28,35 +28,49 @@
                     <div id="RS">
                         <h3>résaux</h3>
                         <a href="https://www.linkedin.com/in/clementavesque" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/linkedin.svg" alt="" id="lien">
+                            <img src="../assets/linkedin.svg" alt="" id="lien">
                         </a>
                     </div>
                 </section>
                 <section id="other">
                     <p>Design par Danielle Levinzon | Codé par Clément Avesque</p>
-                    <img src="" alt="">
+
+                    <a href="#top">
+                        <img src="../assets/flèche-haut.svg" alt="">
+                    </a>
                 </section>
             </div>
             <img src="../assets/star_footer.svg" alt="">
+
         </div>
     </footer>
 </template>
 <style scoped>
 
-
-
-#other{
-    margin-top: 5%;
-    font-size: 16px;
+a img{
+    height: 100% !important;
+    width: auto !important;
 }
 
-#lien{
+a{
+    height: 100%;
+    width: auto;
+}
+#other {
+    margin-top: 5%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lien {
     height: 3vh !important;
     width: auto !important;
     cursor: pointer;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     text-shadow: none;
@@ -64,18 +78,19 @@ a{
 
 #nav ul {
     margin-top: 30%;
-    display:flex ;
+    display: flex;
     flex-direction: column;
     gap: 20%;
     list-style: none;
     gap: 40px;
 }
+
 #list {
     display: flex;
     flex-direction: row;
     width: 80vw;
     justify-content: space-around;
-    
+
 }
 
 #footer_me {
@@ -91,10 +106,11 @@ a{
     font-size: 24px;
 }
 
-#RS h3{
+#RS h3 {
 
     margin-bottom: 40%;
 }
+
 h3 {
     font-family: "Staatliches";
     width: 140%;
