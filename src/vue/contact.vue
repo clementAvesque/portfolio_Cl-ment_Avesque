@@ -54,7 +54,7 @@ export default {
         SubmitEvent = () => {
             const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
             const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC
             console.log(serviceId, templateId, publicKey)
             emailjs.send(serviceId, templateId, form, publicKey)
                 .then(() => {
