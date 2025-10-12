@@ -54,6 +54,7 @@
 
 #desc {
     padding: 0 5%;
+    text-align: justify;
 }
 
 h3 {

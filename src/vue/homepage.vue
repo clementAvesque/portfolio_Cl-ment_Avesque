@@ -96,6 +96,7 @@ h2 {
     color: var(--black);
     font-size: 32px;
     font-family: 'Geist', sans-serif;
+    text-align: justify;
 
 }
 

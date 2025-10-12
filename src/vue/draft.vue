@@ -132,6 +132,7 @@ export default {
     transition: all 0.4s ease-in-out;
     font-family: "Geist", sans-serif;
     color: var(--black);
+    text-align: justify;
 }
 
 #image {
