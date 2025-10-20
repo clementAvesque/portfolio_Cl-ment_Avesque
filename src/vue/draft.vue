@@ -14,7 +14,7 @@
         </section>
         <section id="selector">
             <CustomButton size="petit" text="<-" use="actif" @click="less()" />
-            <RouterLink :to="`/draft/${project.name}`">
+            <RouterLink :to="`/draft/${project.name}#top`">
                 <CustomButton text="voir plus" use="actif" />
             </RouterLink>
             <CustomButton size="petit" text="->" use="actif" @click="more()" />
@@ -78,11 +78,12 @@ export default {
                     identity.style.marginLeft = "50%"
                     image.style.marginLeft = "10%"
                     desc.style.marginLeft = "60%"
+
                     break
                 case 2:
-                    identity.style.marginLeft = "70%"
-                    desc.style.marginLeft = "70%"
-                    image.style.marginLeft = "50px"
+                    identity.style.marginLeft = "65%"
+                    desc.style.marginLeft = "65%"
+                    image.style.marginLeft = "5%"
                     break
             }
         }

@@ -35,8 +35,8 @@ import { useMainStore } from '../store/index.js'
 
 // données
 const items = [
-    { text: 'accueil', to: '/', style: true },
-    { text: 'réalisations', style: true, to: '/draft' },
+    { text: 'Accueil', to: '/', style: true },
+    { text: 'Réalisations', style: true, to: '/draft' },
     { text: 'Contact', to: '/contact', style: false }
 ]
 

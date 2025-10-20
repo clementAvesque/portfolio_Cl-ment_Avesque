@@ -11,11 +11,11 @@
         <img src="../assets/separationNight1.svg" alt="" class="separation" v-if="theme === false" />
         <img src="../assets/separationLight1.svg" alt="" class="separation" v-else />
         <section id="me">
-            <pdp :mode="theme" :src="pdpImg" style="width: 30%;"/>
-            <p>Je m'appelle Clément AVESQUE, j'ai 19 ans et je suis dans la formation développement web du DN MADE à la
-                CCI d'Annecy qui est en partenariat avec les Gobelins. Je souhaiterais pouvoir évoluer dans mon cursus
-                jusqu'en master pour pouvoir avoir l'expérience et le savoir nécessaire pour répondre à un maximum de
-                besoins.</p>
+            <pdp :mode="theme" :src="pdpImg" style="width: 30%;" />
+            <p>Je m'appelle Clément AVESQUE, j'ai 19 ans et je poursuis actuellement une formation en développement web
+                au sein du DN MADE Numérique à la CCI d'Annecy, en partenariat avec les Gobelins. Mon objectif est de
+                poursuivre ce cursus jusqu’au niveau master afin d’acquérir une expertise solide et polyvalente, capable
+                de répondre aux besoins variés du secteur numérique.</p>
         </section>
         <img src="../assets/separationNight2.svg" alt="" class="separation" v-if="theme === false">
         <img src="../assets/separationLight2.svg" alt="" class="separation" v-else>
@@ -25,8 +25,8 @@
         </section>
         <img src="../assets/separationNight3.svg" alt="" class="separation" id="last" v-if="theme === false">
         <img src="../assets/separationLight3.svg" alt="" class="separation" id="last" v-else>
-        <RouterLink to="/draft">
-            <carousselle/>
+        <RouterLink to="/draft#top">
+            <carousselle />
         </RouterLink>
     </div>
 </template>
@@ -47,7 +47,7 @@ a {
     text-decoration: none;
 }
 
-#projet h2{
+#projet h2 {
     color: #FFCD03;
 }
 
@@ -67,7 +67,7 @@ a {
 }
 
 #skill {
-    
+
     color: var(--yellow);
     text-align: end;
     padding-right: 10%;
@@ -150,7 +150,7 @@ section {
 h1 {
     font-size: 124px;
     font-weight: 700;
-    color:  #FFCD03;
+    color: #FFCD03;
     text-shadow: 0 0 10px #FFCD03;
     font-family: 'Staatliches', sans-serif;
 }

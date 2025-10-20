@@ -15,18 +15,18 @@
                         <h3>NAVIGATION</h3>
                         <ul>
                             <li>
-                                <RouterLink to="/">Accueil</RouterLink>
+                                <RouterLink to="/#top">Accueil</RouterLink>
                             </li>
                             <li>
-                                <RouterLink to="/draft"> Réalisation</RouterLink>
+                                <RouterLink to="/draft#top"> Réalisations</RouterLink>
                             </li>
                             <li>
-                                <RouterLink to="/contact"> Contact</RouterLink>
+                                <RouterLink to="/contact#top"> Contact</RouterLink>npm run deev
                             </li>
                         </ul>
                     </div>
                     <div id="RS">
-                        <h3>résaux</h3>
+                        <h3>réseaux</h3>
                         <a href="https://www.linkedin.com/in/clementavesque" target="_blank" rel="noopener noreferrer">
                             <img src="../assets/linkedin.svg" alt="" id="lien">
                         </a>

@@ -22,7 +22,7 @@
                 <p>{{ project.description }}</p>
                 <h3>ce que j'ai appris</h3>
                 <p>{{ project.learn }}</p>
-                <h3>ce qui m'a plus</h3>
+                <h3>ce qui m'a plu</h3>
                 <p>{{ project.i_like }}</p>
             </div>
             <div id="more">
@@ -83,6 +83,7 @@ h3 {
 
 #pres {
     width: 50%;
+    cursor: auto;
 }
 
 #pres p {
