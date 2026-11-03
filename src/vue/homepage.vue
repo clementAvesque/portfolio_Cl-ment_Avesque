@@ -12,10 +12,10 @@
         <img src="../assets/separationLight1.svg" alt="" class="separation" v-else />
         <section id="me">
             <pdp :mode="theme" :src="pdpImg" style="width: 30%;" />
-            <p>Je m'appelle Clément AVESQUE, j'ai 19 ans et je poursuis actuellement une formation en développement web
-                au sein du DN MADE Numérique à la CCI d'Annecy, en partenariat avec les Gobelins. Mon objectif est de
-                poursuivre ce cursus jusqu’au niveau master afin d’acquérir une expertise solide et polyvalente, capable
-                de répondre aux besoins variés du secteur numérique.</p>
+            <p>My name is Clément AVESQUE, I am 21 years old and currently pursuing web development training within 
+                the IUT of Annecy-le-Vieux in the INFO creation, design, and realization section. My goal is to continue
+                this curriculum up to a master's level in order to acquire solid and versatile expertise, capable of meeting the
+                diverse needs of the digital and robotics sector.</p>
         </section>
         <img src="../assets/separationNight2.svg" alt="" class="separation" v-if="theme === false">
         <img src="../assets/separationLight2.svg" alt="" class="separation" v-else>
