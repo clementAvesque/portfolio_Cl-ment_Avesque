@@ -8,7 +8,7 @@
                         <img src="../assets/logo-clement_white.svg" alt="" id="logo">
                         <div id="footer_me">
                             <h3>Clément AVESQUE</h3>
-                            <p>Développer</p>
+                            <p>Developer</p>
                         </div>
                     </div>
                     <div id="nav">
@@ -21,7 +21,7 @@
                                 <RouterLink to="/draft#top"> Realisation</RouterLink>
                             </li>
                             <li>
-                                <RouterLink to="/contact#top"> Contact</RouterLink>npm run deev
+                                <RouterLink to="/contact#top"> Contact</RouterLink>
                             </li>
                         </ul>
                     </div>
