@@ -1,20 +1,20 @@
 <template>
     <section id="contact">
         <div id="explain">
-            <h2>UN PROJET?</h2>
-            <p>Vous cherchez un développeur motivé, humain et structuré ? Vous êtes au bon endroit. Contactez-moi et je
-                vous répondrai sous 48h, avec enthousiasme et professionnalisme. Faites-moi confiance pour organiser une
-                partie de votre parcours sur le web : structuration, documentation, impact — c’est mon terrain de jeu.
-                Ils m’ont fait confiance. Pourquoi pas vous ?</p>
+            <h2>A PROJECT?</h2>
+            <p>Are you looking for a motivated, people-oriented, and structured developer?
+                You've come to the right place. Contact me and I will reply within 48 hours with enthusiasm 
+                and professionalism. Trust me to organize part of your journey on the web: structuring, documentation, 
+                impact — that's my playground. They trusted me. Why not you?</p>
         </div>
 
         <div>
             <form @submit.prevent="SubmitEvent">
-                <input type="text" v-model="form.name" placeholder="Nom" class="simple" required>
-                <input type="text" v-model="form.company" placeholder="prénom/entreprise" class="simple" required>
+                <input type="text" v-model="form.name" placeholder="Name" class="simple" required>
+                <input type="text" v-model="form.company" placeholder="FirstName/enterprise" class="simple" required>
                 <input type="text" v-model="form.email" placeholder="Email" class="long" required>
-                <input type="text" v-model="form.title" placeholder="titre" class="long" required>
-                <textarea v-model="form.message" cols="30" rows="10" placeholder="votre message" required></textarea>
+                <input type="text" v-model="form.title" placeholder="Object" class="long" required>
+                <textarea v-model="form.message" cols="30" rows="10" placeholder="your message" required></textarea>
                 <Button type="submit" text="envoyer" use="actif" size="moyen" />
             </form>
         </div>
