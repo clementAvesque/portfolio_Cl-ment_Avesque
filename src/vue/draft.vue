@@ -15,7 +15,7 @@
         <section id="selector">
             <CustomButton size="petit" text="<-" use="actif" @click="less()" />
             <RouterLink :to="`/draft/${project.name}#top`">
-                <CustomButton text="more project?" use="actif" />
+                <CustomButton text="more About" use="actif" />
             </RouterLink>
             <CustomButton size="petit" text="->" use="actif" @click="more()" />
         </section>
