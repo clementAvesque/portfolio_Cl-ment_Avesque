@@ -12,7 +12,7 @@
                         <Custombutton size="petit" :text="stack" style="width: 100%;" />
                     </div>
                     <a v-if="project.liens_du_produit" :href="project.liens_du_produit" target="_blank">
-                        <Custombutton text="testez le!" use="actif" />
+                        <Custombutton text="try it!" use="actif" />
                     </a>
                     
                 </div>
