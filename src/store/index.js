@@ -4,7 +4,6 @@ import { defineStore } from 'pinia';
 export const useMainStore = defineStore('main', {
     state: () => ({
         project: [
-[
     {
         "id": "001",
         "name": "Genesii",
@@ -78,7 +77,6 @@ export const useMainStore = defineStore('main', {
         "i_like": "I really liked having total autonomy and being able to freely choose the theme and mechanics of the game. This project allowed me to put my programming and design skills into practice, and appreciate the creative process from start to finish.",
         "card": "/project/cards/flying_to_the_sky.svg"
     }
-]
 
 
 
