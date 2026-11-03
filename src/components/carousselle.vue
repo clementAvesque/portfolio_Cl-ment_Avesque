@@ -1,6 +1,6 @@
 <template>
   <div ref="projectEl" class="project-banner">
-    <h2>DÉCOUVREZ MES PROJETS</h2>
+    <h2>DISCOVER ANOTHER PROJECT</h2>
     <CustomButton text="Voir les projets" size="grand" use="actif" />
   </div>
 </template>
