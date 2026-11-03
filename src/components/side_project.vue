@@ -1,6 +1,6 @@
 <template>
     <div id="more">
-        <h3>Autres projets</h3>
+        <h3>Other projects</h3>
         <div id="content">
             <div v-for="(project, index) in all_projects" :key="index" class="proj">
                 <RouterLink :to="`/draft/${project.name}`">
