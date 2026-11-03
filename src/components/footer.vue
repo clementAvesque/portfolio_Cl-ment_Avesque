@@ -8,17 +8,17 @@
                         <img src="../assets/logo-clement_white.svg" alt="" id="logo">
                         <div id="footer_me">
                             <h3>Clément AVESQUE</h3>
-                            <p>Développeur</p>
+                            <p>Développer</p>
                         </div>
                     </div>
                     <div id="nav">
                         <h3>NAVIGATION</h3>
                         <ul>
                             <li>
-                                <RouterLink to="/#top">Accueil</RouterLink>
+                                <RouterLink to="/#top">Home</RouterLink>
                             </li>
                             <li>
-                                <RouterLink to="/draft#top"> Réalisations</RouterLink>
+                                <RouterLink to="/draft#top"> Realisation</RouterLink>
                             </li>
                             <li>
                                 <RouterLink to="/contact#top"> Contact</RouterLink>npm run deev
@@ -33,7 +33,7 @@
                     </div>
                 </section>
                 <section id="other">
-                    <p>Design par Danielle Levinzon | Codé par Clément Avesque</p>
+                    <p>Designed by Danielle Levinzon | developped by Clément Avesque</p>
 
                     <a href="#top">
                         <img src="../assets/flèche-haut.svg" alt="">
