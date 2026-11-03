@@ -20,9 +20,9 @@
             <div id="desc">
                 <h3>description</h3>
                 <p>{{ project.description }}</p>
-                <h3>ce que j'ai appris</h3>
+                <h3>what I learned</h3>
                 <p>{{ project.learn }}</p>
-                <h3>ce qui m'a plu</h3>
+                <h3>what I liked</h3>
                 <p>{{ project.i_like }}</p>
             </div>
             <div id="more">
